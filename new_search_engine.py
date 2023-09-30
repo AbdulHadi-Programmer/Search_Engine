@@ -1,7 +1,8 @@
 from googlesearch import search
+query = input("Enter Your Search: ")
 
-data = input("Enter Your Search: ")
-#print(search(data)) 
-
-for i in search(data):
-    print(i)
+for i in search(query, 10, advanced= True):
+    print(i.title)
+    print(i.url)
+    print(i.description)
+    print()
